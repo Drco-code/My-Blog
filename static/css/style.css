@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0A0A0A;
+    color: #E8E8E8;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+nav {
+    background: linear-gradient(90deg, #00FFA3, #0078FF);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+nav .logo span {
+    color: #FF006E;
+}
+
+nav .nav-links a {
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #FF006E;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #001F54;
+    color: #FFF;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header h1 span {
+    color: #00FFA3;
+}
+
+header .btn {
+    background: #FF006E;
+    color: #FFF;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+header .btn:hover {
+    background: #00FFA3;
+}
+
+/* Blog Posts */
+main {
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog-post {
+    background: #1F1F1F;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post h2 {
+    color: #00FFA3;
+    margin-bottom: 0.5rem;
+}
+
+.blog-post p {
+    margin-bottom: 1rem;
+}
+
+.blog-post a {
+    color: #FF006E;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.blog-post a:hover {
+    opacity: 0.8;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 110, 0.5);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #001F54;
+    color: #FFF;
+}
