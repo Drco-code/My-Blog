@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+.home-blog {
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0A0A0A;
+    color: #E8E8E8;
+}
+
+/* Navbar */
+nav {
+    background: linear-gradient(90deg, #00FFA3, #0078FF);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+nav .logo span {
+    color: #FF006E;
+}
+
+nav .nav-links a {
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #FF006E;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #001F54;
+    color: #FFF;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header h1 span {
+    color: #00FFA3;
+}
+
+header .btn {
+    background: #FF006E;
+    color: #FFF;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+header .btn:hover {
+    background: #00FFA3;
+}
+
+/* Blog Posts */
+main {
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog-post {
+    background: #1F1F1F;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post h2 {
+    color: #00FFA3;
+    margin-bottom: 0.5rem;
+}
+
+.blog-post p {
+    margin-bottom: 1rem;
+}
+
+.blog-post a {
+    color: #FF006E;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.blog-post a:hover {
+    opacity: 0.8;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 110, 0.5);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #001F54;
+    color: #FFF;
+}
+
+.post {
+    display: block; /* Reset layout to block */
+    width: 100%;    /* Ensure it spans full width */
+}
+
+
+.post ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;       /* Remove default padding */
+    margin: 0;        /* Remove default margin */
+}
+
+.post li {
+    margin-bottom: 20px; /* Add spacing between posts */
+    padding: 15px;       /* Add padding inside each post */
+    background: #1F1F1F; /* Background color for each post */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.post li h2 {
+    color: #00FFA3; /* Title color */
+    margin-bottom: 10px;
+}
+
+.post li p {
+    margin-bottom: 5px; /* Space between paragraphs */
+}
+
+/* Form Container Styling */
+.styled-form {
+    max-width: 600px;         /* Limit form width */
+    margin: 2rem auto;        /* Center the form */
+    padding: 2rem;            /* Add padding around the form */
+    background: #1F1F1F;      /* Form background color */
+    border-radius: 10px;      /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    color: #E8E8E8;           /* Text color */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+}
+
+/* Input and Textarea Fields */
+.styled-form input[type="text"],
+.styled-form input[type="email"],
+.styled-form input[type="password"],
+.styled-form input[type="file"],
+.styled-form textarea,
+.styled-form select {
+    width: 100%;             /* Full width */
+    padding: 0.75rem;        /* Padding inside input fields */
+    margin-bottom: 1rem;     /* Space between inputs */
+    border: 1px solid #333;  /* Border color */
+    border-radius: 5px;      /* Rounded corners */
+    background: #0A0A0A;     /* Input background */
+    color: #E8E8E8;          /* Input text color */
+}
+
+/* Input and Textarea Focus Effect */
+.styled-form input:focus,
+.styled-form textarea:focus,
+.styled-form select:focus {
+    border-color: #00FFA3;  /* Highlight border on focus */
+    outline: none;          /* Remove default outline */
+}
+
+/* Submit Button */
+.btn-submit {
+    background: #FF006E;    /* Button background */
+    color: #FFF;            /* Text color */
+    padding: 0.75rem 1.5rem;/* Button padding */
+    border: none;           /* Remove default border */
+    border-radius: 5px;     /* Rounded corners */
+    font-size: 1rem;        /* Font size */
+    cursor: pointer;        /* Change cursor on hover */
+    transition: background 0.3s; /* Smooth hover effect */
+}
+
+/* Submit Button Hover Effect */
+.btn-submit:hover {
+    background: #00FFA3;    /* Change color on hover */
+}
